@@ -1,0 +1,7 @@
+package com.tingyu.template.ssh.query;
+
+import com.tingyu.template.ssh.entities.Demo;
+
+public class DemoQuery extends Demo {
+
+}

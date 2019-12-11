@@ -1,0 +1,8 @@
+package com.tingyu.template.ssh.service;
+
+import com.tingyu.template.ssh.entities.Demo;
+import com.tingyu.template.ssh.query.DemoQuery;
+
+public interface DemoService extends BaseService<Demo, DemoQuery> {
+
+}

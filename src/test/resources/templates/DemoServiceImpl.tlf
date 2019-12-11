@@ -1,0 +1,22 @@
+package com.tingyu.template.ssh.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tingyu.template.ssh.dao.DemoDao;
+import com.tingyu.template.ssh.entities.Demo;
+import com.tingyu.template.ssh.query.DemoQuery;
+import com.tingyu.template.ssh.service.DemoService;
+
+@Service
+public class DemoServiceImpl extends BaseServiceImpl<Demo, DemoQuery> implements DemoService {
+
+	@SuppressWarnings("unused")
+	private DemoDao DemoDao;
+
+	@Autowired
+	public void setDemoDao(DemoDao DemoDao) {
+		this.DemoDao = DemoDao;
+		this.baseDao = DemoDao;
+	}
+}

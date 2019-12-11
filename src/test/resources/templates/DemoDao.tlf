@@ -1,0 +1,8 @@
+package com.tingyu.template.ssh.dao;
+
+import com.tingyu.template.ssh.entities.Demo;
+import com.tingyu.template.ssh.query.DemoQuery;
+
+public interface DemoDao extends BaseDao<Demo,DemoQuery>{
+
+}

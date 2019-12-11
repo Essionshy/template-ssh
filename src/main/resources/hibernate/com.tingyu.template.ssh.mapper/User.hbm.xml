@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.tingyu.template.ssh.entities.User"
+		table="ssh_user" dynamic-update="true">
+		<id name="id" type="java.lang.Integer">
+			<column name="ID" />
+			<generator class="native" />
+		</id>
+		<property name="username" type="java.lang.String">
+			<column name="USERNAME" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="PASSWORD" />
+		</property>
+		<property name="gender" type="java.lang.Integer">
+			<column name="GENDER" />
+		</property>
+			<property name="birth" type="java.util.Date">
+			<column name="BIRTH" />
+		</property>
+		<property name="phone" type="java.lang.String">
+			<column name="PHONE" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="EMAIL" />
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="ADDRESS" />
+		</property>
+	</class>
+</hibernate-mapping>
